@@ -199,6 +199,10 @@ h4 {
   gap: 1em;
   transition: var(--trans-color);
 }
+.mini-text{
+  font-size: var(--font-smaller);
+  color: var(--light-text-color);
+}
 
 
 /* -----------------
@@ -352,6 +356,63 @@ nav .fly-item{
   margin-bottom: 1.5em;
   z-index: 1;
 }
+
+/* 01. HEADER -----------------
+    *  c. Header Main, Department Category
+    * ---------------*/
+.header-main{
+  background-color: var(--secondary-dark-color);
+  padding: 1.5em 0;
+  margin-bottom: 2em;
+}
+.dpt-cat{
+  position: relative;
+}
+.dpt-cat .dpt-head{
+  position: relative;
+  background-color: var(--primary-color);
+  padding: 0.75em 1.5em;
+  border-radius: 7px 7px 0 0;
+  margin-bottom: -2.15em;
+  color: var(--white-color);
+  width: 300px;
+}
+.dpt-cat .dpt-head .mini-text{
+  color: var(--light-bg-color);
+}
+.dpt-cat .dpt-trigger{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.3em;
+  height: 60px;
+  width: 60px;
+}
+
+/* 01. HEADER -----------------
+    *  d. Search Form
+    * ---------------*/
+.header-main .right{
+  flex: 1;
+}
+form{
+  position: relative;
+}
+form.search input{
+  outline: 0;
+  border: 0;
+  line-height: 3.25em;
+  padding: 0.7em 0 4.5em;
+  width: var(--percent100);
+  border-radius: 7px;
+  font-size: 0.9em;
+  font-weight: var(--fw3);
+}
+
+
+
+
+
 
 /* -----------------
  * 15. RESPONSIVE
