@@ -19,11 +19,12 @@ function copyMenu() {
 copyMenu();
 
 //show mobile menu
-const menuButton = document.querySelector('.trigger'),
-    closeButton = document.querySelector('.t-close')
-addclass = document.querySelector('.site')
+const menuButton = document.querySelector('.trigger')
+const closeButton = document.querySelector('.t-close')
+const addclass = document.querySelector('.site');
 
 menuButton.addEventListener('click', function () {
+    console.log('menu button clicked')
     addclass.classList.toggle('showmenu')
 })
 closeButton.addEventListener('click', function () {
@@ -38,5 +39,5 @@ function toggle(e) {
     e.preventDefault()
     submenu.forEach((item) => item != this ? item.closest('.has-child').classList.remove('expand') : null)
     if (this.closest('.has-child').classList != 'expand');
-    this.closest('has-child').classList.toggle('expand')
+    this.closest('.has-child').classList.toggle('expand')
 }
