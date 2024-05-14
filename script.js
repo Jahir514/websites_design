@@ -23,8 +23,8 @@ const menuButton = document.querySelector('.trigger')
 const closeButton = document.querySelector('.t-close')
 const addclass = document.querySelector('.site')
 
-menuButton.addEventListener('click', function () {
-    console.log('menu button clicked')
+menuButton.addEventListener('click', function (e) {
+    e.preventDefault()
     addclass.classList.toggle('showmenu')
 })
 closeButton.addEventListener('click', function () {
