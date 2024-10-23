@@ -16,9 +16,7 @@
     @apply font-poppins;
   }
   h1 {
-    @apply font-fw8 leading-[1]
-    font-weight: var(--fw8);
-    line-height: 1;
+    @apply font-fw8 leading-[1];
   }
   h2 {
     @apply text-[2.5em];
