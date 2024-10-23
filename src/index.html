@@ -1,106 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@1,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../dist/style.css" />
-  </head>
 
-  <body>
-    <div id="page" class="site">
-      <header>
-        <!-- header top -->
-        <div>
-          <div class="container">
-            <div
-              class="flexitem justify-between text-small font-fw3 leading-10"
-            >
-              <!-- left menu -->
-              <div>
-                <ul class="flexitem gap-6 main-links">
-                  <li><a href="">Blog</a></li>
-                  <li><a href="">Featured Product</a></li>
-                  <li><a href="">Wishlist</a></li>
-                </ul>
-              </div>
-              <!-- right menu -->
-              <div class="right">
-                <ul class="flexitem gap-6 main-links">
-                  <li><a href="">Sign Up</a></li>
-                  <li><a href="">My Account</a></li>
-                  <li><a href="">Order Tracking</a></li>
-                  <li class="relative group">
-                    <a href="" class="flexitem">
-                      USD
-                      <span class="icon-small"
-                        ><i class="ri-arrow-down-s-line"></i></span
-                    ></a>
-                    <!-- submenu -->
-                    <ul
-                      class="hidden group-hover:block absolute -left-[1em] leading-[2em] bg-white border border-solid border-borderColor z-1"
-                    >
-                      <li>
-                        <a
-                          href=""
-                          class="py-[0.25em] px-[1em] bg-borderColor block"
-                          >USD</a
-                        >
-                      </li>
-                      <li>
-                        <a href="" class="py-[0.25em] px-[1em] block">EURO</a>
-                      </li>
-                      <li>
-                        <a href="" class="py-[0.25em] px-[1em] block">TK</a>
-                      </li>
-                      <li>
-                        <a href="" class="py-[0.25em] px-[1em] block">GBP</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="relative group">
-                    <a href="" class="flexitem"
-                      >English
-                      <span class="icon-small"
-                        ><i class="ri-arrow-down-s-line"></i></span
-                    ></a>
-                    <!-- submenu -->
-                    <ul
-                      class="hidden group-hover:block absolute -left-[1em] leading-[2em] border border-borderColor"
-                    >
-                      <li>
-                        <a
-                          href=""
-                          class="py-[0.25em] px-[1em] block bg-borderColor"
-                          >English</a
-                        >
-                      </li>
-                      <li>
-                        <a href="" class="py-[0.25em] px-[1em] block">Bangla</a>
-                      </li>
-                      <li>
-                        <a href="" class="py-[0.25em] px-[1em] block"
-                          >Spanish</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../dist/style.css" />
+</head>
+
+<body>
+  <div id="page" class="site">
+    <header class="text-white bg-header">
+      <!-- header top -->
+      <div class="border-blue-50">
+        <div class="container ">
+          <div class="justify-between leading-10 uppercase font-fw5 flexitem text-small font-lato">
+            <!-- left menu -->
+            <div>
+              <ul class="gap-6 flexitem">
+                <li>
+                  <div
+                    class="px-2 border flexcenter border-r-white/40 border-l-white/40 border-b-transparent border-t-transparent">
+                    <a href="">English</a>
+                    <img src="../assests/icons/arrow-down-line.svg" alt="arrow down" class="w-4 h-4">
+                  </div>
+
+                </li>
+                <li><a href="">Featured Product</a></li>
+                <li><a href="">Wishlist</a></li>
+              </ul>
+            </div>
+            <!-- right menu -->
+            <div class="right">
+              <ul class="gap-6 flexitem">
+                <li><a href="">Sign Up</a></li>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Order Tracking</a></li>
+                <li class="relative group">
+                  <a href="" class="flexitem">
+                    USD
+                    <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                  <!-- submenu -->
+                  <ul
+                    class="hidden group-hover:block absolute -left-[1em] leading-[2em] bg-white border border-solid border-borderColor z-1">
+                    <li>
+                      <a href="" class="py-[0.25em] px-[1em] bg-borderColor block">USD</a>
+                    </li>
+                    <li>
+                      <a href="" class="py-[0.25em] px-[1em] block">EURO</a>
+                    </li>
+                    <li>
+                      <a href="" class="py-[0.25em] px-[1em] block">TK</a>
+                    </li>
+                    <li>
+                      <a href="" class="py-[0.25em] px-[1em] block">GBP</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="relative group">
+                  <a href="" class="flexitem">English
+                    <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                  <!-- submenu -->
+                  <ul class="hidden group-hover:block absolute -left-[1em] leading-[2em] border border-borderColor">
+                    <li>
+                      <a href="" class="py-[0.25em] px-[1em] block bg-borderColor">English</a>
+                    </li>
+                    <li>
+                      <a href="" class="py-[0.25em] px-[1em] block">Bangla</a>
+                    </li>
+                    <li>
+                      <a href="" class="py-[0.25em] px-[1em] block">Spanish</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </header>
-      <main></main>
-      <footer></footer>
-    </div>
-  </body>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </div>
+</body>
+
 </html>

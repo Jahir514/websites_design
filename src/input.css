@@ -7,13 +7,13 @@
     @apply no-underline text-inherit;
   }
   body {
-    @apply font-rubik text-base leading-[1.4] text-dark bg-white;
+    @apply font-cabin text-base leading-[1.4] bg-white;
   }
   h1,
   h2,
   h3,
   h4 {
-    @apply font-poppins;
+    @apply font-cabin;
   }
   h1 {
     @apply font-fw8 leading-[1];
@@ -57,48 +57,5 @@ a {
   }
   .flexcol {
     @apply flex flex-col gap-4;
-  }
-  .main-links a:hover {
-    @apply text-secondary;
-  }
-  .second-links a:hover {
-    @apply text-lightText;
-  }
-  .icon-small,
-  .icon-large {
-    @apply flex items-center py-0 px-[0.25em] font-normal;
-  }
-  .icon-small {
-    @apply text-[1.25em] ml-auto;
-  }
-  .icon-large,
-  .icon-large {
-    @apply text-[1.75em] py-0 pr-[0.75em] pl-0;
-  }
-  .object-cover img {
-    @apply absolute object-cover w-full h-full block;
-  }
-  .products .media {
-    @apply relative flex-shrink-0 overflow-hidden;
-  }
-  .primary-button,
-  .secondary-button,
-  .light-button {
-    @apply text-small py-[0.9em] px-[2em] h-auto w-fit rounded-[2em] transition duration-300 ease-in;
-  }
-  .primary-button {
-    @apply bg-primary text-white hover:bg-dark;
-  }
-  .secondary-button {
-    @apply bg-secondaryDark text-white hover:bg-lightBg hover:text-secondaryDark;
-  }
-  .light-button {
-    @apply bg-lightBg hover:bg-secondaryDark hover:text-white;
-  }
-  .view-all {
-    @apply text-small flex gap-[1em] transition duration-300 ease-in;
-  }
-  .mini-text {
-    @apply text-smaller text-lightText;
   }
 }
