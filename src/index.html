@@ -24,12 +24,20 @@
             <!-- left menu -->
             <div>
               <ul class="gap-6 flexitem">
-                <li>
+                <li class="relative transition duration-300 ease-in group">
                   <div
                     class="px-2 border flexcenter border-r-white/40 border-l-white/40 border-b-transparent border-t-transparent">
                     <a href="">English</a>
                     <img src="../assests/icons/arrow-down-line.svg" alt="arrow down" class="w-4 h-4">
                   </div>
+                  <!-- submenu -->
+
+                  <ul
+                    class="absolute z-10 lg:min-w-[220px] bg-white border border-solid text-textColor hidden group-hover:flex flex-col space-y-2 px-4 py-2 font-bold transition-all duration-300 ease-in-out transform opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">
+                    <li><a href="">Bengali</a></li>
+                    <li><a href="">English</a></li>
+                    <li><a href="">Spanish</a></li>
+                  </ul>
 
                 </li>
                 <li><a href="">Featured Product</a></li>
