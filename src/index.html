@@ -1,101 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-commerce Website</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../dist/style.css" />
-</head>
+  <body>
+    <div id="page" class="site">
+      <header class="text-white bg-header min-h-80">
+        <!-- header top -->
+        <div
+          class="border border-b-1 border-b-white/40 border-t-transparent border-l-transparent border-r-transparent"
+        >
+          <div class="container">
+            <div
+              class="justify-between leading-10 uppercase font-fw5 flexitem text-small font-lato"
+            >
+              <!-- left menu -->
+              <div>
+                <ul class="flexitem">
+                  <li
+                    class="relative transition-all duration-300 ease-in group"
+                  >
+                    <div
+                      class="px-2 border flexcenter border-r-white/40 border-l-white/40 border-b-transparent border-t-transparent"
+                    >
+                      <a href="">English</a>
+                      <img
+                        src="../assests/icons/arrow-down-line.svg"
+                        alt="arrow down"
+                        class="w-4 h-4"
+                      />
+                    </div>
+                    <!-- submenu -->
 
-<body>
-  <div id="page" class="site">
-    <header class="text-white bg-header">
-      <!-- header top -->
-      <div class="border-blue-50">
-        <div class="container ">
-          <div class="justify-between leading-10 uppercase font-fw5 flexitem text-small font-lato">
-            <!-- left menu -->
-            <div>
-              <ul class="gap-6 flexitem">
-                <li class="relative transition duration-300 ease-in group">
-                  <div
-                    class="px-2 border flexcenter border-r-white/40 border-l-white/40 border-b-transparent border-t-transparent">
-                    <a href="">English</a>
-                    <img src="../assests/icons/arrow-down-line.svg" alt="arrow down" class="w-4 h-4">
-                  </div>
-                  <!-- submenu -->
+                    <ul
+                      class="absolute z-10 lg:min-w-[220px] bg-white border border-solid shadow-lg text-textColor opacity-0 group-hover:flex flex-col px-4 py-2 font-bold transition-all duration-300 ease-in-out transform translate-y-6 group-hover:opacity-100 group-hover:translate-y-0"
+                    >
+                      <li>
+                        <a
+                          href=""
+                          class="hover:text-primary transition-all duration-75 ease-in"
+                          >Bengali</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="hover:text-primary transition-all duration-75 ease-in"
+                          >English</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="hover:text-primary transition-all duration-75 ease-in"
+                          >Spanish</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="relative transition-all duration-300 ease-in group"
+                  >
+                    <div
+                      class="px-2 border flexcenter border-r-white/40 border-l-transparent border-b-transparent border-t-transparent"
+                    >
+                      <a href="">Country</a>
+                      <img
+                        src="../assests/icons/arrow-down-line.svg"
+                        alt="arrow down"
+                        class="w-4 h-4"
+                      />
+                    </div>
+                    <!-- submenu -->
 
-                  <ul
-                    class="absolute z-10 lg:min-w-[220px] bg-white border border-solid text-textColor hidden group-hover:flex flex-col space-y-2 px-4 py-2 font-bold transition-all duration-300 ease-in-out transform opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">
-                    <li><a href="">Bengali</a></li>
-                    <li><a href="">English</a></li>
-                    <li><a href="">Spanish</a></li>
-                  </ul>
-
-                </li>
-                <li><a href="">Featured Product</a></li>
-                <li><a href="">Wishlist</a></li>
-              </ul>
-            </div>
-            <!-- right menu -->
-            <div class="right">
-              <ul class="gap-6 flexitem">
-                <li><a href="">Sign Up</a></li>
-                <li><a href="">My Account</a></li>
-                <li><a href="">Order Tracking</a></li>
-                <li class="relative group">
-                  <a href="" class="flexitem">
-                    USD
-                    <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
-                  <!-- submenu -->
-                  <ul
-                    class="hidden group-hover:block absolute -left-[1em] leading-[2em] bg-white border border-solid border-borderColor z-1">
-                    <li>
-                      <a href="" class="py-[0.25em] px-[1em] bg-borderColor block">USD</a>
-                    </li>
-                    <li>
-                      <a href="" class="py-[0.25em] px-[1em] block">EURO</a>
-                    </li>
-                    <li>
-                      <a href="" class="py-[0.25em] px-[1em] block">TK</a>
-                    </li>
-                    <li>
-                      <a href="" class="py-[0.25em] px-[1em] block">GBP</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="relative group">
-                  <a href="" class="flexitem">English
-                    <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
-                  <!-- submenu -->
-                  <ul class="hidden group-hover:block absolute -left-[1em] leading-[2em] border border-borderColor">
-                    <li>
-                      <a href="" class="py-[0.25em] px-[1em] block bg-borderColor">English</a>
-                    </li>
-                    <li>
-                      <a href="" class="py-[0.25em] px-[1em] block">Bangla</a>
-                    </li>
-                    <li>
-                      <a href="" class="py-[0.25em] px-[1em] block">Spanish</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                    <ul
+                      class="absolute z-10 lg:min-w-[220px] bg-white border border-solid shadow-lg text-textColor opacity-0 group-hover:flex flex-col px-4 py-2 font-bold transition-all duration-300 ease-in-out transform translate-y-6 group-hover:opacity-100 group-hover:translate-y-0"
+                    >
+                      <li>
+                        <a
+                          href=""
+                          class="hover:text-primary transition-all duration-75 ease-in"
+                          >Bangladesh</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="hover:text-primary transition-all duration-75 ease-in"
+                          >England</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="hover:text-primary transition-all duration-75 ease-in"
+                          >Spain</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="ml-2 uppercase">
+                    <a href="">
+                      <strong>FREE SHIPPING FOR ALL ORDERS OF $150</strong>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- right menu -->
+              <div class="right">
+                <ul class="gap-6 flexitem">
+                  <li>
+                    <ul class="flexitem space-x-2">
+                      <li>
+                        <a href="">
+                          <img
+                            src="../assests/icons/facebook-fill.svg"
+                            alt="arrow down"
+                            class="w-5 h-5"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="../assests/icons/twitter-x-line.svg"
+                            alt="arrow down"
+                            class="w-5 h-5"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="../assests/icons/linkedin-box-fill.svg"
+                            alt="arrow down"
+                            class="w-5 h-5"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="../assests/icons/pinterest-fill.svg"
+                            alt="arrow down"
+                            class="w-5 h-5"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="../assests/icons/telegram-fill.svg"
+                            alt="arrow down"
+                            class="w-5 h-5"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="">My Account</a></li>
+                  <li><a href="">Order Tracking</a></li>
+                  <li class="relative group">
+                    <a href="" class="flexitem">
+                      USD
+                      <span class="icon-small"
+                        ><i class="ri-arrow-down-s-line"></i></span
+                    ></a>
+                    <!-- submenu -->
+                    <ul
+                      class="hidden group-hover:block absolute -left-[1em] leading-[2em] bg-white border border-solid border-borderColor z-1"
+                    >
+                      <li>
+                        <a
+                          href=""
+                          class="py-[0.25em] px-[1em] bg-borderColor block"
+                          >USD</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="py-[0.25em] px-[1em] block">EURO</a>
+                      </li>
+                      <li>
+                        <a href="" class="py-[0.25em] px-[1em] block">TK</a>
+                      </li>
+                      <li>
+                        <a href="" class="py-[0.25em] px-[1em] block">GBP</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="relative group">
+                    <a href="" class="flexitem"
+                      >English
+                      <span class="icon-small"
+                        ><i class="ri-arrow-down-s-line"></i></span
+                    ></a>
+                    <!-- submenu -->
+                    <ul
+                      class="hidden group-hover:block absolute -left-[1em] leading-[2em] border border-borderColor"
+                    >
+                      <li>
+                        <a
+                          href=""
+                          class="py-[0.25em] px-[1em] block bg-borderColor"
+                          >English</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="py-[0.25em] px-[1em] block">Bangla</a>
+                      </li>
+                      <li>
+                        <a href="" class="py-[0.25em] px-[1em] block"
+                          >Spanish</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main></main>
-    <footer></footer>
-  </div>
-</body>
-
+      </header>
+      <main></main>
+      <footer></footer>
+    </div>
+  </body>
 </html>
